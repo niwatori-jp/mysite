@@ -71,12 +71,12 @@ time {
 .works li {
   border: 1px solid gray;
   border-radius: 8px;
-  padding-bottom: 32px;
 }
 
 .works .bottom {
   width: calc(100% - 32px);
   margin: 0 auto;
+  padding-bottom: 32px;
 }
 
 .work h2 {
