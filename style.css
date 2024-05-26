@@ -59,12 +59,17 @@ time {
   margin: 64px 0;
 }
 
+.work-01 .image {
+  padding: 32px;
+}
+
 .works ul {
-  margin: 0;
+  width: 80%;
+  margin: 0 auto;
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 64px;
 }
 
@@ -76,7 +81,8 @@ time {
 .works .bottom {
   width: calc(100% - 32px);
   margin: 0 auto;
-  padding-bottom: 32px;
+  padding: 16px ;
+  border-top: 1px solid #eee;
 }
 
 .work h2 {
