@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/* common */
+
+:root {
+  --brand-color01: #84633d;
+  --brand-color02: #d9c7b3;
+}
+
+@keyframes shine {
+  
+  0% {
+    left: -75%;
+  }
+  
+  34% {
+    left: -75%;
+  }
+  
+  40% {
+    left: 125%;
+  }
+  
+  100% {
+    left: 125%;
+  }
+}
+
+/* header */
+
+.header-inner {
+  position: relative;
+}
+
+@keyframes plusMove {
+
+  0% {
+    bottom: -8px;
+  }
+
+  60% {
+    bottom: -60px;
+  }
+
+  100% {
+    bottom: -60px;
+  }
+
+}
+
+/* main-visual */
+
+.main-visual .main-visual-img {
+  padding: 80px 80px 0;
+  position: relative;
+}
+
+.main-visual .main-visual-img img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-bottom: 10px solid var(--brand-color02);
+}
+
+.main-visual .main-copy {
+  position: absolute;
+  bottom: -110px;
+  right: 12%;
+  background: var(--brand-color02);
+  overflow: hidden;
+}
+
+.main-visual .main-copy::before {
+  content:"";
+  position: absolute;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  transform: skewX(-25deg);
+  animation: shine 6s infinite;
+}
+
+.main-copy img {
+  vertical-align: bottom;
+  opacity: .5;
+}
+
+/* header-logo */
+
+h1  {
+  box-sizing: border-box;
+  width: 260px;
+  height: 380px;
+  background: white;
+  padding: 80px 0 0 110px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1 a {
+  transition: opacity 500ms;
+}
+
+h1 a:hover {
+  opacity: .7;
+}
+
+h1 img {
+  vertical-align: bottom;
+}
+
+/* header-tel */
+
+.header-tel {
+  position: absolute;
+  top: 0;
+  right: 80px;
+}
+
+.header-tel p {
+  font-size:20px;
+  line-height: 80px;
+  padding-right: 40px;
+}
+
+.header-tel span {
+  font-size:18px;
+}
+
+/* header-sub-nav */
+
+.header-sub-nav {
+  position:absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-sub-nav .header-sub-nav-img {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-sub-nav .header-sub-nav-img01 {
+  background: var(--brand-color01);
+}
+
+.header-sub-nav .header-sub-nav-img02 {
+  background: var(--brand-color02);
+}
+
+.header-address {
+  writing-mode: vertical-lr;
+  width: 80px;
+  display:flex;
+  align-items: center;
+  font-size: 12px;
+  padding-top: 50px;
+}
+
+/* scroll-icon */
+
+.scroll-icon-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-icon {
+  writing-mode: vertical-lr;
+  font-size: 12px;
+  position: relative;
+}
+
+.scroll-icon::before {
+  content: "";
+  width: 9px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 2px;
+  bottom: -10px;
+  animation: plusMove 2500ms infinite;
+}
+
+.scroll-icon::after {
+  content: "";
+  background: black;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -64px;
+}
