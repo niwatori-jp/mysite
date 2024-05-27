@@ -27,6 +27,8 @@ a {
 
 img {
   vertical-align: bottom;
+  width: 100%;
+  height: auto;
 }
 
 time {
@@ -59,8 +61,9 @@ time {
   margin: 64px 0;
 }
 
-.work-01 .image {
-  padding: 32px;
+.work01 .image,
+.work02 .image {
+  padding: 64px;
 }
 
 .works ul {
