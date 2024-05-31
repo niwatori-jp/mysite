@@ -726,9 +726,13 @@ footer {
 .footer-inner01 {
   display: flex;
   background: #333;
-  padding: 120px 10%;
+  padding: 120px 20%;
   margin-top: -50px;
   line-height: 1.6;
+}
+
+.info {
+  flex: 1;
 }
 
 .info01 {
@@ -742,16 +746,21 @@ footer {
 
 .info02 {
   display: flex;
-  padding: 2% 10%;
+  gap: 5%;
+  padding: 2% 2%;
+  flex: 2;
 }
 
 .info03 {
+  display: block;
   width: 140px;
   height: 140px;
   border: 1px solid #ccc;
   line-height: 140px;
   text-align: center;
   transition: background 300ms, color 300ms;
+  color: inherit;
+  text-decoration: none;
 }
 
 .info03:hover {
