@@ -7,6 +7,7 @@
   <title>clinic</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="images/medicine.png" type="image/x-icon">
 </head>
@@ -25,8 +26,8 @@
         </div>
         <h1 class="header-logo">
           <a href="#">
-            <div class="header-logo-img01"><img src="images/80x80.png" alt="logo01"></div>
-            <div class="header-logo-img01"></div><img src="images/80x80.png" alt="logo02">
+            <div class="header-logo-image01 header-logo-image"><img src="images/80x80.png" alt="logo01"></div>
+            <div class="header-logo-image02 header-logo-image"><img src="images/80x80.png" alt="logo02"></div>
           </a>
         </h1>
         <div class="header-tel">
@@ -34,12 +35,12 @@
         </div>
         <div class="header-sub-nav">
           <a href="#">
-            <div class="header-sub-nav-img01 header-sub-nav-img">
+            <div class="header-sub-nav-image01 header-sub-nav-image">
               <img src="images/camera.png" width="32" height="32">
             </div>
           </a>
           <a href="#">
-            <div class="header-sub-nav-img02 header-sub-nav-img">
+            <div class="header-sub-nav-image02 header-sub-nav-image">
               <img src="images/stethoscope.png" width="32" height="32">
             </div>
           </a>
@@ -87,9 +88,10 @@
           <a href="#" class="link-box">VIEW<br>MORE</a>
         </div>
       </section>
-      <section id="banner">
+      <!-- banner -->
+      <section class="banner">
         <div class="image">
-          <img src="images/750x120.png" alt="">
+          <img src="images/750x120.png" width="750" height="120">
         </div>
       </section>
       <!-- menu-sec -->
@@ -176,21 +178,23 @@
       <!-- access -->
       <section class="access">
         <div class="access-inner">
-          <div class="text">
-            <h2 class="sec-ttl">
-              <p class="eng">ACCESS</p>
-              <p class="jpn">アクセス</p>
-            </h2>
-            <address>〒111-1111<br>東京都○○区○○1-1-1</address>
-            <p>○○鉄道○○駅より徒歩５分<br>○○鉄道○○駅より徒歩７分</p>
-          </div>
-          <div class="gmap">
-            <div class="gmap-inner">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d18730548.115023054!2d126.2679055876677!3d32.87120444129903!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1717091663169!5m2!1sja!2sjp"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
+          <div class="content">
+            <div class="text">
+              <h2 class="sec-ttl">
+                <p class="eng">ACCESS</p>
+                <p class="jpn">アクセス</p>
+              </h2>
+              <address>〒111-1111<br>東京都○○区○○1-1-1</address>
+              <p>○○鉄道○○駅より徒歩５分<br>○○鉄道○○駅より徒歩７分</p>
+            </div>
+            <div class="gmap">
+              <div class="gmap-inner">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d18730548.115023054!2d126.2679055876677!3d32.87120444129903!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1717091663169!5m2!1sja!2sjp"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -198,61 +202,63 @@
       <!-- infomation -->
       <section class="infomation">
         <div class="infomation-inner">
-          <div class="left">
-            <h2 class="sec-ttl">
-              <p class="eng">INFOMATION</p>
-              <p class="jpn">診療時間</p>
-            </h2>
-            <div class="address">
-              <span>TEL.</span>
-              <a href="#">03-1234-5678</a>
+          <div class="content">
+            <div class="left">
+              <h2 class="sec-ttl">
+                <p class="eng">INFOMATION</p>
+                <p class="jpn">診療時間</p>
+              </h2>
+              <div class="address">
+                <span>TEL.</span>
+                <a href="#">03-1234-5678</a>
+              </div>
+              <p class="fax-num">Fax.03-1234-5678</p>
             </div>
-            <p class="fax-num">Fax.03-1234-5678</p>
-          </div>
-          <div class="right">
-            <table>
-              <thead>
-                <tr>
-                  <th class="hour-ttl">診療時間</th>
-                  <th class="week-ttl">月</th>
-                  <th class="week-ttl">火</th>
-                  <th class="week-ttl">水</th>
-                  <th class="week-ttl">木</th>
-                  <th class="week-ttl">金</th>
-                  <th class="week-ttl">土</th>
-                  <th class="week-ttl">日・祝</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="hour-ttl">9:00-12:00</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th class="hour-ttl">15:00-19:00</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="opening-time-text">
-              <p>▲ 15:00～18:00</p>
-              <p>休診日　木曜・日曜・祝日</p>
-              <p>祝日がある週の木曜日は診療いたします。</p>
-              <div class="opening-time-text-sub">
-                <p>採取受付時間　午前11：30、午後18：30（土曜は17：30）</p>
-                <p>補足テキスト補足テキスト補足テキスト補足テキスト補足テキスト補足テキスト補足テキスト補足テキスト</p>
+            <div class="right">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="hour-ttl">診療時間</th>
+                    <th class="week-ttl">月</th>
+                    <th class="week-ttl">火</th>
+                    <th class="week-ttl">水</th>
+                    <th class="week-ttl">木</th>
+                    <th class="week-ttl">金</th>
+                    <th class="week-ttl">土</th>
+                    <th class="week-ttl">日・祝</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="hour-ttl">9:00-12:00</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th class="hour-ttl">15:00-19:00</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="opening-time-text">
+                <p>▲ 15:00～18:00</p>
+                <p>休診日　木曜・日曜・祝日</p>
+                <p>祝日がある週の木曜日は診療いたします。</p>
+                <div class="opening-time-text-sub">
+                  <p>採取受付時間　午前11：30、午後18：30（土曜は17：30）</p>
+                  <p>補足テキスト補足テキスト補足テキスト補足テキスト補足テキスト補足テキスト補足テキスト補足テキスト</p>
+                </div>
               </div>
             </div>
           </div>
@@ -277,7 +283,7 @@
             月・火・水・金<br>土<br>休診日
           </div>
           <div class="open-hour">
-            9:00-12:00-15:00-19:00<br>9:00-12:00-15:00-18:00<br>木曜日、日曜日、祝日
+            9:00-12:00　15:00-19:00<br>9:00-12:00　15:00-18:00<br>木曜日、日曜日、祝日
           </div>
         </div>
         <div class="info"><a href="#" class="info03">採用情報</a></div>
