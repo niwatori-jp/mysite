@@ -379,7 +379,6 @@ nav a:hover {
   opacity: .3;
 }
 
-
 .menu-sec-btn-image {
   opacity: .5;
   transition: opacity 300ms;
@@ -606,6 +605,7 @@ iframe {
 
 .sec-ttl .eng {
   margin-top: 20px;
+  letter-spacing: 1px;
 }
 
 .sec-ttl .jpn::before {
