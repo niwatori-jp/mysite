@@ -586,6 +586,7 @@ iframe {
   background:  #f7f5f2;
   position: relative;
   display: flex;
+  padding-bottom: 60px;
 }
 
 .infomation-inner .left {
