@@ -83,7 +83,7 @@
   height: 80px;
 }
 
-.index-header-logo  a {
+.index-header-logo a {
   transition: opacity 500ms;
 }
 
@@ -459,7 +459,7 @@
 }
 
 .access .content {
-  width:60%;
+  width: 60%;
   display: flex;
   position: relative;
   margin: 0 auto;
@@ -499,4 +499,138 @@
 }
 
 /* about.html-------------------- */
+/* director-sec------------------ */
+
+.message-area {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+}
+
+.message-area-left {
+  width: 44%;
+  margin-right: 10%;
+}
+
+.message-area-right {
+  width: 46%;
+  line-height: 1.6;
+  padding-top: 30px;
+}
+
+.message-ttl {
+  font-size: 18px;
+}
+
+.message-text {
+  margin-top: 30px;
+}
+
+.message-name {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.message-name span {
+  font-size: 12px;
+}
+
+.career-area {
+  background: #f7f5f2;
+  margin-top: 60px;
+}
+
+.career-area-inner {
+  padding: 0 2%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.career-list {
+  padding: 30px 0 30px 54%;
+}
+
+.career-list li:not(:first-child) {
+  margin-top: 8px;
+}
+
+/* clinic-info------------------- */
+
+.clinic-info-sec {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clinic-info-sec .sec-ttl-vertical {
+  position: absolute;
+  top: -40px;
+  left: 180px;
+  width: 1em;
+  height: 6em;
+}
+
+.clinic-info-list {
+  padding: 165px 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3%;
+}
+
+.info {
+  position: relative;
+}
+
+.info span {
+  position: absolute;
+  background: white;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.clinic-info-text {
+  padding: 20px 25px;
+  background: #ae9373;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.info:nth-child(4) span {
+  font-size: 12px;
+}
+
+/* stuff-sec---------------------- */
+
+.stuff-sec {
+  position: relative;
+  padding: 100px 15% 100px;
+  max-width: 700px;
+  margin: 0 auto 100px;
+}
+
+.stuff-sec::after {
+  background: #f7f5f2;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.stuff-sec .sec-ttl-vertical {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 1em;
+  height: 6em;
+}
+
+/* treatment.html------------------ */
+/* content-------------------------- */
 
