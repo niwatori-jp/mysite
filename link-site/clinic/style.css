@@ -1,6 +1,11 @@
 @charset "utf-8";
 
-/* top page */
+/* index-html------------------------- */
+/* header----------------------------- */
+
+.index-header-inner {
+  position: relative;
+}
 
 /* main-visual */
 
@@ -16,7 +21,9 @@
   border-bottom: 10px solid var(--brand-color02);
 }
 
-.main-visual .main-copy {
+/* main-copy */
+
+.main-copy {
   position: absolute;
   bottom: -110px;
   right: 12%;
@@ -24,7 +31,7 @@
   overflow: hidden;
 }
 
-.main-visual .main-copy::before {
+.main-copy::before {
   content: "";
   position: absolute;
   left: -75%;
@@ -35,13 +42,32 @@
   animation: shine 6s infinite;
 }
 
+@keyframes shine {
+
+  0% {
+    left: -75%;
+  }
+
+  34% {
+    left: -75%;
+  }
+
+  40% {
+    left: 125%;
+  }
+
+  100% {
+    left: 125%;
+  }
+}
+
 .main-copy img {
   opacity: .5;
 }
 
-/* header-logo */
+/* index-header-logo */
 
-h1 {
+.index-header-logo {
   box-sizing: border-box;
   width: 260px;
   height: 380px;
@@ -52,25 +78,17 @@ h1 {
   left: 0;
 }
 
-h1 a {
-  transition: opacity 500ms;
-}
-
-h1 a:hover {
-  opacity: .7;
-}
-
-.header-logo-image {
+.index-header-logo-image {
   width: 80px;
   height: 80px;
 }
 
-/* header-tel */
+.index-header-logo  a {
+  transition: opacity 500ms;
+}
 
-.header-tel {
-  position: absolute;
-  top: 0;
-  right: 80px;
+.index-header-logo a:hover {
+  opacity: .7;
 }
 
 /* header-sub-nav */
@@ -113,6 +131,22 @@ h1 a:hover {
   animation: plusMove 2500ms infinite;
 }
 
+@keyframes plusMove {
+
+  0% {
+    bottom: -8px;
+  }
+
+  60% {
+    bottom: -60px;
+  }
+
+  100% {
+    bottom: -60px;
+  }
+
+}
+
 .scroll-icon::after {
   content: "";
   background: black;
@@ -121,6 +155,35 @@ h1 a:hover {
   position: absolute;
   left: 50%;
   bottom: -64px;
+}
+
+/* index-header-nav */
+
+.index-header-nav {
+  margin-top: 40px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.index-header-nav ul {
+  writing-mode: vertical-lr;
+  margin-left: 9.5%;
+}
+
+.index-header-nav li {
+  margin-right: 36%;
+}
+
+.index-header-nav a {
+  text-decoration: none;
+  color: black;
+  transition: color 300ms;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.index-header-nav a:hover {
+  color: var(--brand-color02);
 }
 
 /* news-sec----------------------------- */
@@ -204,16 +267,22 @@ h1 a:hover {
   right: 5%;
 }
 
-/* banner */
+/* banner------------------------------ */
 
 .banner {
   margin: 80px 0;
 }
 
 .banner .image {
+  display: block;
   width: 750px;
   height: 120px;
   margin: 0 auto;
+  transition: opacity 300ms;
+}
+
+.banner .image:hover {
+  opacity: .5;
 }
 
 /* manu-sec-------------------------------- */
@@ -428,4 +497,6 @@ h1 a:hover {
 .gmap-inner {
   height: 300px;
 }
+
+/* about.html-------------------- */
 
