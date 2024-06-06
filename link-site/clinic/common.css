@@ -234,31 +234,31 @@ iframe {
   height: 100%;
 }
 
-/* infomation */
+/* information */
 
-.infomation {
+.information {
   margin: 50px 6% 0;
 }
 
-.infomation-inner {
+.information-inner {
   margin: 0 auto;
   background: #f7f5f2;
   padding-bottom: 60px;
 }
 
-.infomation-inner .content {
+.information-inner .content {
   position: relative;
   display: flex;
   width: 60%;
   margin: 0 auto;
 }
 
-.infomation-inner .left {
+.information-inner .left {
   width: 30%;
   padding: 13% 0 0 3%;
 }
 
-.infomation-inner .left::before {
+.information-inner .left::before {
   content: "";
   width: 80px;
   height: 80px;
@@ -272,22 +272,22 @@ iframe {
   margin-top: 20px;
 }
 
-.infomation .address {
+.information .address {
   margin-top: 40px;
 }
 
-.infomation .address a {
+.information .address a {
   font-size: 24px;
   display: block;
   margin-top: 10px;
 }
 
-.infomation .fax-num {
+.information .fax-num {
   margin-top: 10px;
   font-size: 14px;
 }
 
-.infomation-inner .right {
+.information-inner .right {
   width: 60%;
   max-width: 600px;
   padding: 0 3% 0 0;
@@ -453,4 +453,34 @@ footer {
   writing-mode: vertical-lr;
   font-size: 24px;
   letter-spacing: 0.12em;
+}
+
+/* page-ttl-box------------------------- */
+
+.page-ttl-box {
+  color: var(--brand-color01);
+  font-size: 20px;
+  line-height: 2;
+  background: #f7f5f2;
+  padding: 70px 0 110px;
+  text-align: center;
+}
+
+/* first------------------------- */
+
+.first {
+  margin-top: -14px;
+  text-align: center;
+}
+
+.first .jpn {
+  font-size: 24px;
+  display: block;
+  letter-spacing: 0.3em;
+}
+
+.first .eng {
+  font-size: 12px;
+  display: block;
+  margin-top: 20px;
 }
