@@ -31,10 +31,6 @@ dd {
   font-size: 13px;
 }
 
-.wrapper {
-  position: relative;
-}
-
 .text-wrapper {
   background: #fff;
   padding: 0 50px;
@@ -102,7 +98,7 @@ header li {
 header li a {
   color: #fff;
   text-decoration: none;
-
+  
 }
 
 .material-symbols-outlined.works,
@@ -118,24 +114,37 @@ header li a {
   }
 }
 
+/* main */
+main {
+  display: flex;
+  overflow: hidden;
+  /* height: auto; */
+}
+
 /* background */
 #background {
   display: none;
 }
 
+#background img {
+  height: 100%;
+}
+
 @media screen and (min-width: 768px) {
   #background {
     display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    object-fit: cover;
+    /* position: absolute; */
+    /* top: 0; */
+    left: 170px;
+    width: calc(100vw - 60% - 170px);
+    height: auto;
   }
 }
 
-/* main */
+/* main-contents */
 @media screen and (min-width: 768px) {
-  main {
+  .main-contents {
     width: 60%;
     position: absolute;
     top: 0;
@@ -150,7 +159,7 @@ header li a {
 }
 
 #works article {
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
   background: #aaa;
 }
 
@@ -168,6 +177,7 @@ header li a {
 
 #works .description-image {
   width: 300px;
+  height: 200px;
   margin: 0 auto;
 }
 
@@ -184,13 +194,17 @@ header li a {
 @media screen and (min-width: 1080px) {
   #works article {
     display: flex;
-    gap: 16px;
+    gap: 3em;
   }
 
   #works .description-text-contents {
     display: block;
     color: #ccc;
-    max-width: 300px;
+    width: 300px;
+  }
+
+  #works .description-image {
+    margin: auto;
   }
 }
 
@@ -225,7 +239,7 @@ header li a {
 #contact button {
   all: unset;
   display: block;
-  margin: 24px auto 0;
+  margin: 3em 30% 0;
   color: #999;
 }
 
@@ -254,4 +268,5 @@ small {
   display: block;
   margin-top: 100px;
   opacity: .7;
+  font-size: 10px;
 }
